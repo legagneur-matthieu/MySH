@@ -41,5 +41,11 @@ Lance l'installation de l'environnement de base si vous ne l'avez pas fait au pr
 - fail2ban : sécurité
 - phpmyadmin : Administration de MySQL
 
-Lors de l'installation tasksel et phpmyadmin vous demanderont des détails de configuration,
+Lors de l'installation tasksel, phpmyadmin et git vous demanderont des détails de configuration,
 sélectionnez "LAMP Setver", "Apache" et saisissez les mots de passe qui sécuriseront votre base MySQL
+
+## Installation environnement DevWebFramework
+
+Lance l'installation de l'environnement developpeur PHP si vous ne l'avez pas fait au préalable et
+installe le DevWebFramework dans /var/www 
+(téléchargement depuis github via git)
