@@ -80,7 +80,7 @@ mysh_update(){
 
 mysh_install_env_base(){
 	mysh_is_uptodate
-	apt-get -y install clamav clamav-daemon default-jre default-jdk firefox-locale-fr thunderbird-locale-fr
+	apt-get -y install clamav clamav-daemon clamav-freshclam clamtk default-jre default-jdk firefox-locale-fr thunderbird-locale-fr
 	mysh_var_env_base=1
 	mysh_press_enter 2
 }

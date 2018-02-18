@@ -21,7 +21,7 @@ et faites votre choix.
 
 Lance les mise a jour si vous ne l'avez pas fait au préalable et installe les paquets suivants :
 
-- clamav clamav-daemon : Antivirus Libre
+- clamav clamav-daemon clamav-frechclam clamtk : Antivirus Libre
 - default-jre default-jdk : Java
 - firefox-locale-fr thunderbird-locale-fr : Navigateur et client de messagerie en français
 
@@ -41,5 +41,5 @@ Lance l'installation de l'environnement de base si vous ne l'avez pas fait au pr
 - fail2ban : sécurité
 - phpmyadmin : Administration de MySQL
 
-Lors de l'installation tasksel et phpmyadmin vous demanderont des détails ds configuration,
+Lors de l'installation tasksel et phpmyadmin vous demanderont des détails de configuration,
 sélectionnez "LAMP Setver", "Apache" et saisissez les mots de passe qui sécuriseront votre base MySQL
