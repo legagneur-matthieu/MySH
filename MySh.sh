@@ -119,6 +119,7 @@ mysh_install_env_phpdev(){
 
 mysh_install_env_dwf(){
 	mysh_phpdev_instaled
+	apt-get -y install php7.0-tidy
 	cd /var/www
 	git init
 	git pull https://github.com/legagneur-matthieu/DevWebFramework.git
