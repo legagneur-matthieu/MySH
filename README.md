@@ -24,6 +24,7 @@ Lance les mise a jour si vous ne l'avez pas fait au préalable et installe les p
 - clamav clamav-daemon clamav-frechclam clamtk : Antivirus Libre
 - default-jre default-jdk : Java
 - firefox-locale-fr thunderbird-locale-fr : Navigateur et client de messagerie en français
+- VLC libdvd : lecture de films et DVD
 
 ## Installation environnement de joueur
 
