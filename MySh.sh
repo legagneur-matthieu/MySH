@@ -79,10 +79,10 @@ mysh_phpdev_instaled(){
 }
 
 mysh_update(){
-	apt-get update
-	apt-get -y upgrade
-	apt-get -y dist-upgrade
-	apt-get -y autoremove
+	apt update
+	apt -y upgrade
+	apt -y dist-upgrade
+	apt -y autoremove
 	do-release-upgrade
 	mysh_var_uptodate=1
 	mysh_press_enter 1
@@ -90,20 +90,21 @@ mysh_update(){
 
 mysh_install_env_base(){
 	mysh_is_uptodate
-	apt-get -y install clamav clamav-daemon clamav-freshclam clamtk default-jre default-jdk firefox-locale-fr thunderbird-locale-fr
+	apt -y install clamav clamav-daemon clamav-freshclam clamtk default-jre default-jdk firefox-locale-fr thunderbird-locale-fr vlc libdvd-pkg
+        dpkg-reconfigure libdvd-pkg
 	mysh_var_env_base=1
 	mysh_press_enter 2
 }
 
 mysh_install_env_gamer(){
 	mysh_base_instaled
-	apt-get -y install playonlinux steam
+	apt -y install playonlinux steam
 	mysh_press_enter 3
 }
 
 mysh_install_env_phpdev(){
 	mysh_base_instaled
-	apt-get -y install tasksel netbeans fail2ban git
+	apt -y install tasksel netbeans fail2ban git
 	tasksel
 	apt-get -y install phpmyadmin
 	echo -n "git user.name : "
@@ -127,7 +128,7 @@ mysh_install_env_dwf(){
 
 mysh_fix_audio(){
 	mysh_is_uptodate
-	apt-get -y install alsa alsa-* pulseaudio 
+	apt -y install alsa alsa-* pulseaudio 
 	mysh_press_enter 6
 }
 
@@ -145,7 +146,7 @@ mysh_pkg_OpenOffice(){
 
 mysh_pkg_compiz(){
 	mysh_base_instaled
-	apt-get -y install compiz compizconfig-settings-manager compiz-plugins compiz-plugins-extra compiz-plugins-main
+	apt -y install compiz compizconfig-settings-manager compiz-plugins compiz-plugins-extra compiz-plugins-main
 	mysh_press_enter 8
 }
 
