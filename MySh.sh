@@ -119,11 +119,14 @@ mysh_install_env_phpdev(){
 
 mysh_install_env_dwf(){
 	mysh_phpdev_instaled
-	apt-get -y install php7.0-tidy
+	apt-get -y install php7.2-tidy php7.2-gmp php7.2-sqlite3
 	cd /var/www
 	git init
 	git pull https://github.com/legagneur-matthieu/DevWebFramework.git
 	rm html/index.html
+        chmod -R 775 /var/www/
+        chgrp -R www-data /var/www/
+        service apache2 restart
 	mysh_press_enter 5
 }
 
