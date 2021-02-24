@@ -99,6 +99,8 @@ mysh_install_env_base(){
 mysh_install_env_gamer(){
 	mysh_base_instaled
 	apt -y install playonlinux steam
+	apt -y install winetricks msitools
+        winetricks dotnet48
 	mysh_press_enter 3
 }
 
